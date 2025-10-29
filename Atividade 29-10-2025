@@ -25,3 +25,20 @@ public class Media
 
 	}
 }
+
+//4. Entrada e Saída de Nome.
+
+import java.util.Scanner;
+
+public class Nome
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+
+		System.out.println("Digite seu nome.");
+		String nome = scan.nextLine();
+		
+		System.out.println("Olá " + nome + " seja bem-bindo.");
+
+	}
+}
