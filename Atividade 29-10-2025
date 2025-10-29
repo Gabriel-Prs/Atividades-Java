@@ -1,1 +1,27 @@
-0
+
+
+
+//3. Leia três números e calcule a mC)dia aritmC)tica simples.
+
+import java.util.Scanner;
+
+public class Media
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+
+		System.out.println("Digite um número");
+		int a = scan.nextInt();
+
+		System.out.println("Digite outro número");
+		int b = scan.nextInt();
+
+        System.out.println("Digite outro número");
+        int c = scan.nextInt();
+
+		int soma = a+b+c;
+    	    
+        System.out.println(soma/3);
+
+	}
+}
