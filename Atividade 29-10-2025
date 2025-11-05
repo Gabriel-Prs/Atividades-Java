@@ -98,10 +98,35 @@ public class triangulo{
 		System.out.println("Digite o valor da altura.");
 		int haltura = scan.nextInt();
 		
-		int areaTri = (base*haltura)/3;
+		int areaTri = (base*haltura);
 		
 		System.out.println("Calculo da área do trinagulo 💱");
         System.out.println("Seu valor é " + areaTri);
+
+		scan.close();
+	}
+}
+
+//8. Leia um valor em minutos e converta para horas e minutos.
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class minutagem{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    //DecimalFormat df = new DecimalFormat("0.00");
+	    
+		System.out.println("Quantos minutos?");
+		double min = scan.nextDouble();
+		
+		double hora = min/60;
+		double seg = min*60;
+		
+		System.out.println("Cornversão de minutos.");
+        System.out.println("Segundos "+ seg);
+        System.out.println("Minutos "+ min);
+        System.out.println("Hora "+ hora);
 
 		scan.close();
 	}
