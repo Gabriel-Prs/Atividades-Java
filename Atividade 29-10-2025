@@ -1,3 +1,13 @@
+//1. Crie um programa que exiba na tela a mensagem:
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
+
+//2. Leia dois números inteiros e exiba a soma deles.
 
 
 
@@ -40,5 +50,59 @@ public class Nome
 		
 		System.out.println("Olá " + nome + " seja bem-bindo.");
 
+	}
+}
+
+//5. Peça o ano de nascimento e o ano atual e exiba a idade da pessoa.
+
+//6. Peça o valor em reais e a cotação do dólar e exiba o valor convertido.
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class Conversao{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    DecimalFormat df = new DecimalFormat("0.00");
+	    
+		System.out.println("Digite o valor.");
+		double valorReal = scan.nextDouble();
+		
+		System.out.println("Valor real do dolar.");
+		double valorDol = scan.nextDouble();
+		
+		double conversão = valorReal/valorDol;
+		
+		System.out.println("\n💱 Conversão Real → Dólar 💱");
+        System.out.println("Valor em Reais: R$ " + df.format(valorReal));
+        System.out.println("Cotação do Dólar: R$ " + df.format(valorDol));
+        System.out.println("Valor em Dólares: US$ " + df.format(conversão));
+
+		scan.close();
+	}
+}
+
+//7. Leia a base e a altura de um retângulo e calcule sua área.
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class triangulo{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    //DecimalFormat df = new DecimalFormat("0.00");
+	    
+		System.out.println("Digite o valor da base.");
+		int base = scan.nextInt();
+		
+		System.out.println("Digite o valor da altura.");
+		int haltura = scan.nextInt();
+		
+		int areaTri = (base*haltura)/3;
+		
+		System.out.println("Calculo da área do trinagulo 💱");
+        System.out.println("Seu valor é " + areaTri);
+
+		scan.close();
 	}
 }
