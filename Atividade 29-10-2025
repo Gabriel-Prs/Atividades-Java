@@ -1,5 +1,4 @@
 //1. Crie um programa que exiba na tela a mensagem:
-
 public class Main
 {
 	public static void main(String[] args) {
@@ -8,11 +7,27 @@ public class Main
 }
 
 //2. Leia dois números inteiros e exiba a soma deles.
+import java.util.Scanner;
 
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    
+		System.out.println("Digite um número");
+		int N1 = scan.nextInt();
+		
+		System.out.println("Digite outro número");
+		int N2 = scan.nextInt();
+		
+		int soma = N1+N2;
+		
+		System.out.println("A soma é " +soma);
+	}
+}
 
 
 //3. Leia três números e calcule a mC)dia aritmC)tica simples.
-
 import java.util.Scanner;
 
 public class Media
@@ -37,7 +52,6 @@ public class Media
 }
 
 //4. Entrada e Saída de Nome.
-
 import java.util.Scanner;
 
 public class Nome
@@ -56,7 +70,6 @@ public class Nome
 //5. Peça o ano de nascimento e o ano atual e exiba a idade da pessoa.
 
 //6. Peça o valor em reais e a cotação do dólar e exiba o valor convertido.
-
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -83,7 +96,6 @@ public class Conversao{
 }
 
 //7. Leia a base e a altura de um retângulo e calcule sua área.
-
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -108,7 +120,6 @@ public class triangulo{
 }
 
 //8. Leia um valor em minutos e converta para horas e minutos.
-
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -130,4 +141,104 @@ public class minutagem{
 
 		scan.close();
 	}
+}
+
+9.//Leia um número inteiro e informe se ele é par ou ímpar.
+import java.util.Scanner;
+
+public class ImpaParInt
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    
+		System.out.println("Digite um número");
+		double Numb = scan.nextDouble();
+		
+		if (Numb == 0) 
+		System.out.println("É um número neutro.");
+		else if (Numb % 2 == 0)
+		System.out.println("O número é par.");
+		else {
+		System.out.println("O número é impar.");
+		}
+		scan.close();
+	}
+	
+}
+
+10.Leia dois números e mostre qual é o maior.
+import java.util.Scanner;
+
+public class MaiorMenô
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    
+		System.out.println("Digite um número");
+		double Numb = scan.nextDouble();
+		
+		System.out.println("Digite outro número");
+		double Numb1 = scan.nextDouble();
+		
+		if (Numb > Numb1)
+		System.out.println(Numb+" é maior que "+Numb1);
+		else
+		System.out.println(Numb+" é menor que "+Numb1);
+		
+		scan.close();
+	}
+	
+}
+
+//11.Leia três números e indique qual é o menor.
+import java.util.Scanner;
+
+public class ImpaParInt
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    
+		System.out.println("Digite um número");
+		double Numb = scan.nextDouble();
+		
+		System.out.println("Digite outro número");
+		double Numb1 = scan.nextDouble();
+		
+		System.out.println("Digite um outro número");
+		double Numb2 = scan.nextDouble();
+		
+		if (Numb < Numb1 && Numb < Numb2)
+		System.out.println(Numb+" é o menor.");
+		else if (Numb1 < Numb && Numb1 < Numb2)
+		System.out.println(Numb1+" é o menor.");
+		else if (Numb2 < Numb && Numb2 < Numb1)
+		System.out.println(Numb2+" é o menor.");
+		
+		scan.close();
+	}
+	
+}
+
+//12.Leia um número e informe se ele é positivo, negativo ou zero.
+import java.util.Scanner;
+
+public class NegPosZer
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner (System.in);
+	    
+		System.out.println("Digite um número");
+		double Numb = scan.nextDouble();
+		
+		if (Numb == 0 )
+		System.out.println(Numb+" é zer0.");
+		else if (Numb < 0)
+		System.out.println(Numb+" é negativo.");
+		else if (Numb > 0)
+		System.out.println(Numb+" é positivo.");
+		else 
+		System.out.println("Número inválido");
+		
+		scan.close();
+	}	
 }
